@@ -453,3 +453,7 @@ ul.solarsystem:hover li {
 
 
 }
+
+html {
+    scroll-behavior: smooth;
+  }
