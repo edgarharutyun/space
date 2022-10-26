@@ -458,6 +458,7 @@ ul.solarsystem:hover li {
     gap: 50px;
     flex-direction: column;
     align-items: center;
+    gap: 100px;
 }
 
 html {
@@ -486,16 +487,21 @@ html {
     background-color: #252734;
 }
 #neptune-section{
-    background-color: #080e24;
+    background-color: #252734;
 }
 #pluto-section{
     background-color: #252734;
 }
 .planet-img{
     width: 250px;
-
 }
-
+.see-more{
+    margin-left: 1270px;
+    margin-bottom: 10px;
+}
+.planet-img{
+    border-radius: 10px;
+}
 
 
 
