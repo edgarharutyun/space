@@ -440,9 +440,17 @@ ul.solarsystem:hover li {
 
 .info {
     width: 95%;
-    height: 200px;
+    height: auto;
     border-radius: 20px;
     background-color: #0f132c;
+}
+
+.wrapper {    
+    display: flex;
+}
+
+.info-text {
+    padding-left: 10px;
 }
 .planetes {
     width: 100%;
@@ -450,10 +458,49 @@ ul.solarsystem:hover li {
     gap: 50px;
     flex-direction: column;
     align-items: center;
-
-
 }
 
 html {
     scroll-behavior: smooth;
   }
+ #mercury-section{
+    background-color: #252734;
+ }
+
+ #venus-section{
+    background-color: #252734;
+ }
+ #earth-section{
+    background-color: #252734;
+ }
+ #mars-section{
+    background-color: #252734;
+ }
+ #jupiter-section{
+    background-color: #252734;
+ }
+ #saturn-section{
+    background-color: #252734;
+ }
+#uranus-section{
+    background-color: #252734;
+}
+#neptune-section{
+    background-color: #080e24;
+}
+#pluto-section{
+    background-color: #252734;
+}
+.planet-img{
+    width: 250px;
+
+}
+
+
+
+
+
+
+
+
+
