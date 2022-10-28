@@ -534,3 +534,8 @@ html {
     flex-direction: column;
 
 }
+.planet-title{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(138, 138, 138);
+}
