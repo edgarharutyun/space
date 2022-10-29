@@ -523,21 +523,27 @@ html {
     height: 40px;
     border: none;
     font-size: 15.5px;
+    margin-right: 20px;
 }
-.button-see-more:hover{
+
+.button-see-more:hover {
     box-shadow: 5px 10px 12px 10px rgb(0 0 0 / 30%);
     opacity: 0.7;
     background-color: #21255c;
+    width: 150px;
+    transition-duration: 5s;
 }
 
 .planets-info-text {
     font-size: 20px;
 }
-.planet-img{
+
+.planet-img {
     flex-direction: column;
 
 }
-.planet-title{
+
+.planet-title {
     font-size: 25px;
     font-weight: 700;
     color: rgb(138, 138, 138);
