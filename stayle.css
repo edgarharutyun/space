@@ -518,8 +518,8 @@ html {
 
 .button-see-more {
     position: absolute;
-    margin-left: 1300px;
-    margin-top: 670px;
+    margin-left: 1280px;
+    margin-top: 500px;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-around;
@@ -528,47 +528,35 @@ html {
     height: 60px;
     padding: 0 20px;
     background: transparent;
-    color: brown;
+    color: rgb(255, 255, 255);
     border-radius: 40px;
     text-decoration: none;
     overflow: hidden;
 
 }
 
-.button-see-more span{
+.button-see-more span {
     text-transform: uppercase;
     font-family: monospace;
     font-weight: bold;
     font-size: 18px;
 }
-.button-see-more::before{
+
+.button-see-more::before {
     content: '';
     position: absolute;
-    height: 60px;
-    width: 60px;
-    border-radius: 40px;
+    height: 45px;
+    width: 45px;
+    border-radius: 35px;
     background: #317399;
     z-index: -1;
     left: 0;
     transition: .4s;
 }
-.button-see-more:hover::before{
+
+.button-see-more:hover::before {
     width: 210px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .planets-info-text {
     font-size: 20px;
@@ -584,10 +572,11 @@ html {
     font-weight: 700;
     color: rgb(138, 138, 138);
 }
+
 .arrow-up {
     position: fixed;
     bottom: 5%;
-    right: 1%;
+    right: 0.5%;
     color: #fff;
     width: 70px;
     height: 70px;
@@ -601,19 +590,21 @@ html {
     font-size: 50px;
     border-radius: 5px;
     transition: .5s;
-  }
-  
-  .arrow-up:hover {
-    background-position: 100% 0;
-  }
+}
 
-  .tooltip {
+.arrow-up:hover {
+    background-position: 100% 0;
+    box-shadow: 0px 10px 15px 5px rgb(0 0 0 / 50%);
+    ;
+}
+
+.tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
-  }
-  
-  .tooltip .tooltiptext {
+}
+
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -623,8 +614,20 @@ html {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-  }
-  
-  .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
     visibility: visible;
-  }
+}
+
+#button-see-more-pluton {
+    margin-top: 523px;
+}
+
+#button-see-more-venius {
+    margin-top: 700px;
+}
+
+#button-see-more-mercury {
+    margin-top: 674px;
+}
