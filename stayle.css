@@ -439,7 +439,7 @@ ul.solarsystem:hover li {
 }
 
 .info {
-    width: 95%;
+    width: 93%;
     height: auto;
     border-radius: 20px;
     background-color: #0f132c;
@@ -456,7 +456,7 @@ ul.solarsystem:hover li {
 .planetes {
     width: 100%;
     display: flex;
-    gap: 50px;
+    gap: 40px;
     flex-direction: column;
     align-items: center;
     gap: 100px;
@@ -508,7 +508,7 @@ html {
 }
 
 .see-more {
-    margin-left: 1270px;
+    margin-left: 1240px;
     margin-bottom: 10px;
 }
 
@@ -517,24 +517,58 @@ html {
 }
 
 .button-see-more {
-    border-radius: 12px;
-    background-color: #5a6c7e;
-    width: 140px;
-    height: 40px;
-    border: none;
-    font-size: 15.5px;
-    margin-right: 20px;
-    transition-duration: 2s;
+    position: absolute;
+    margin-left: 1300px;
+    margin-top: 670px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 170px;
+    height: 60px;
+    padding: 0 20px;
+    background: transparent;
+    color: brown;
+    border-radius: 40px;
+    text-decoration: none;
+    overflow: hidden;
+
 }
 
-.button-see-more:hover {
-    box-shadow: 5px 10px 12px 10px rgb(0 0 0 / 30%);
-    opacity: 0.7;
-    background-color: #21255c;
-    width: 150px;
-    font-size: 16.5px;
-    transition-duration: 1s;
+.button-see-more span{
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
 }
+.button-see-more::before{
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+    background: #317399;
+    z-index: -1;
+    left: 0;
+    transition: .4s;
+}
+.button-see-more:hover::before{
+    width: 210px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .planets-info-text {
     font-size: 20px;
@@ -553,7 +587,7 @@ html {
 .arrow-up {
     position: fixed;
     bottom: 5%;
-    right: 3%;
+    right: 1%;
     color: #fff;
     width: 70px;
     height: 70px;
