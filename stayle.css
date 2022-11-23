@@ -11,11 +11,11 @@
 
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow");
 
- body {
+body {
     font: 14px/1.5 "PT Sans Narrow", sans-serif;
     background: #080e24 url(http://neography.com/experiment/circles/solarsystem/bg.jpg) repeat;
     color: #626668;
-} 
+}
 
 /* Solar System Styles */
 ul.solarsystem {
@@ -390,7 +390,7 @@ ul.solarsystem li.pluto {
     animation-duration: 120s;
 }
 
- @keyframes orbit {
+@keyframes orbit {
     from {
         transform: rotate(0deg)
     }
@@ -398,7 +398,7 @@ ul.solarsystem li.pluto {
     to {
         transform: rotate(360deg)
     }
-} 
+}
 
 @keyframes moon {
     from {
@@ -440,7 +440,6 @@ ul.solarsystem:hover li {
     flex-direction: column;
     align-items: center;
     gap: 100px;
-
 }
 
 html {
@@ -498,7 +497,6 @@ html {
 
 .button-see-more {
     position: absolute;
-    margin-left: 1280px;
     margin-top: 500px;
     transform: translate(-50%, -50%);
     display: flex;
@@ -513,6 +511,12 @@ html {
     text-decoration: none;
     overflow: hidden;
 
+}
+
+.button-div {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .button-see-more span {
@@ -576,50 +580,13 @@ html {
 .arrow-up:hover {
     background-position: 100% 0;
     box-shadow: 0px 10px 15px 5px rgb(0 0 0 / 50%);
-    
-}
-
-#button-see-more-pluton {
-    margin-top: 523px;
-}
-
-#button-see-more-venius {
-    margin-top: 700px;
-}
-
-#button-see-more-mercury {
-    margin-top: 672px;
-}
-
-#button-see-more-earth {
-    margin-top: 542px;
-}
-
-#button-see-more-mars {
-    margin-top: 701px;
-}
-
-#button-see-more-jupiter {
-    margin-top: 463px;
-}
-
-#button-see-more-saturn {
-    margin-top: 610px;
-}
-
-#button-see-more-uranus{
-    margin-top: 463px;
 
 }
 
-#button-see-more-neptun {
-    margin-top: 523px;
-}
 
 
-  
-  /* Tooltip text */
-  .tooltip .tooltiptext {
+/* Tooltip text */
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -633,9 +600,91 @@ html {
     z-index: 1;
     top: -10px;
     right: -101px;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
     visibility: visible;
-  }
+}
+
+@media screen and (max-width: 480px) {
+    .solarsystem {
+        display: none;
+    }
+    #descriptions {
+        display: none;
+    }
+    .info {
+       width: 100%;
+    }
+    div.planet-img div:not(:first-child) {
+        display: none;
+    }
+    .wrapper {
+        display: block;
+    }
+    .planet-img {
+        width: 100%;
+        display: block;
+    }
+    .info-text {
+        display: block;
+    }
+    .button-see-more {
+        display: block;
+        margin-top: 0;
+        position: relative;
+    }
+    .button-div {
+        align-items: initial;
+        display: flex;
+        justify-content: center;
+    }
+    .button-div * {
+        all: initial;
+    }
+    .button-see-more {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        padding: 0 20px;
+        background: transparent;
+        color: rgb(255, 255, 255);
+        border-radius: 40px;
+        text-decoration: none;
+        overflow: hidden;
+    
+    }
+        
+    .button-see-more span {
+        text-transform: uppercase;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+    }
+
+    .button-see-more::before {
+        content: '';
+        position: absolute;
+        height: 45px;
+        width: 45px;
+        border-radius: 35px;
+        background: #317399;
+        z-index: -1;
+        left: 0;
+        transition: .4s;
+    }
+    
+    .button-see-more:hover::before {
+        width: 100%;
+    }  
+    
+    .planets-info-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
