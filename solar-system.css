@@ -421,12 +421,11 @@ ul.solarsystem:hover li {
 .info {
     width: 93%;
     height: auto;
-    border-radius: 20px;
-    background-color: #0f132c;
 }
 
 .wrapper {
     display: flex;
+    background-color: #292f45;
 }
 
 .info-text {
@@ -445,52 +444,9 @@ ul.solarsystem:hover li {
 html {
     scroll-behavior: smooth;
 }
-
-#mercury-section {
-    background-color: #2b2d43;
-}
-
-#venus-section {
-    background-color: #2b2d43;
-}
-
-#earth-section {
-    background-color: #2b2d43;
-}
-
-#mars-section {
-    background-color: #2b2d43;
-}
-
-#jupiter-section {
-    background-color: #2b2d43;
-}
-
-#saturn-section {
-    background-color: #2b2d43;
-}
-
-#uranus-section {
-    background-color: #2b2d43;
-}
-
-#neptune-section {
-    background-color: #2b2d43;
-}
-
-#pluto-section {
-    background-color: #2b2d43;
-}
-
 .planet-img {
-    width: 250px;
+    width: 245px;
 }
-
-.see-more {
-    margin-left: 1240px;
-    margin-bottom: 10px;
-}
-
 .planet-img {
     border-radius: 10px;
 }
@@ -512,11 +468,13 @@ html {
     overflow: hidden;
 
 }
-
 .button-div {
+    margin-top: 600px;
     align-items: flex-end;
     display: flex;
     justify-content: flex-end;
+ 
+    
 }
 
 .button-see-more span {
@@ -544,7 +502,7 @@ html {
 
 .planets-info-text {
     font-size: 20px;
-    color: #8b9397;
+    color: #8e969b;
 }
 
 .planet-img {
@@ -597,7 +555,7 @@ html {
     text-indent: 0;
     /* Position the tooltip text - see examples below! */
     position: absolute;
-    z-index: 1;
+    z-index: 200;
     top: -10px;
     right: -101px;
 }
@@ -607,7 +565,7 @@ html {
     visibility: visible;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 500px) {
     .solarsystem {
         display: none;
     }
@@ -655,7 +613,6 @@ html {
         border-radius: 40px;
         text-decoration: none;
         overflow: hidden;
-    
     }
         
     .button-see-more span {
