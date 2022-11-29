@@ -1,5 +1,6 @@
 body {
-    background-image: url("Space/image/space-img.jpg");
+    background-image: url("Space/images/space-img.jpg");
+    background-repeat: no-repeat;
 }
 
 .space_title {
@@ -39,4 +40,9 @@ body {
 
 .a{
     text-decoration: none;
+}
+.fas{
+font-size: 100px;
+color: rgb(52, 0, 0);
+margin-left: 1000px;
 }
