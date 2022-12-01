@@ -426,6 +426,7 @@ ul.solarsystem:hover li {
 .wrapper {
     display: flex;
     background-color: #292f45;
+    border-radius: 20px;
 }
 
 .info-text {
