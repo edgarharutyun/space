@@ -3,11 +3,26 @@
     src: url('fonts/Amar.ttf');
 }
 
+
 .space_title {
     font-size: 70px;
     text-align: center;
+    line-height: 100px;
+    vertical-align:middle;
 }
-
+.logo img {
+    height: 100px;
+    border-radius: 30px;
+}
+header {
+    display: flex;
+    gap: 150px;
+    margin: 30px;
+}
+header * {    
+    margin: 0;
+    padding: 0;
+}
 
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow");
 
