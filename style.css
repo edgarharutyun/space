@@ -8,13 +8,29 @@ body {
 }
 
 .space_title {
-    font-size: 81px;
-    color: rgb(2 26 60);
-    font-family: Amar;
     src: url('fonts/Amar.ttf');
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(0, 21, 50);
+    font-family: Amar;
     text-align: center;
+    opacity: 0.9;
 }
-
+.Space-exploration-card{
+    width: 1300px;
+    height: 200px;
+    background-color: #8500ff;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    background-image: url(https://img.itinari.com/pages/images/original/1feeadc4-e7b7-49f6-b160-246092d2d9a2-moonrays_byurakan1412px.jpg?ch=DPR&dpr=2.625&w=1600&s=293c92cc3d814f3ca22d1bf9c24049cd);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: cover;
+}
+.Space-exploration-card:hover{
+    opacity: 0.9;
+    transform: scale(1.06)
+}
 
 .card {
     width: 1300px;
@@ -50,7 +66,13 @@ body {
     align-items: center;
 }
 
-.name {
+.Space-exploration-name {
+    text-align: center;
+    transition-duration: 0.5s;
+    color: rgb(3 0 85);
+    font-size: 35px;
+}
+.solar-system-name {
     text-align: center;
     transition-duration: 0.5s;
     color: rgb(3 0 85);
