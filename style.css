@@ -24,7 +24,7 @@ body {
 }
 
 .card {
-    height: 170px;
+    height: 200px;
     border-radius: 20px;
     transition-duration: 0.5s;
     background-color: blue;
@@ -37,23 +37,31 @@ body {
 }
 
 #card1 {
-    background-image: url(https://cdn.pixabay.com/photo/2014/09/08/09/24/solar-system-439046__340.jpg);
+    background-image: url(images/div1-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #card2 {
-    background-image: url(https://img.itinari.com/pages/images/original/1feeadc4-e7b7-49f6-b160-246092d2d9a2-moonrays_byurakan1412px.jpg?ch=DPR&dpr=2.625&w=1600&s=293c92cc3d814f3ca22d1bf9c24049cd);
+    background-image: url(images/div2-img.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
 }
 
 #card3 {
-    background-image: url(https://c1.wallpaperflare.com/preview/226/353/110/stars-constellation-sky-night-sky.jpg);
+    background-image: url(images/div3-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+}
+
+#card4 {
+    background-image: url(images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .name {
@@ -63,7 +71,7 @@ body {
     transition-duration: 0.5s;
     color: rgb(3 0 85);
     font-size: 40px;
-    line-height: 170px;
+    line-height: 200px;
     vertical-align: middle;
     opacity: 1;
 }
@@ -81,11 +89,16 @@ body {
 }
 
 #name3 {
-    color: #4447dc;
+    color: #000134;
 }
 
+#name4 {
+    color: #110014;
+}
+
+
 .a {
-    width: 90%;;
+    width: 90%;
     text-decoration: none;
 }
 
