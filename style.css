@@ -13,7 +13,6 @@ body {
     color: rgb(0, 21, 50);
     font-family: Amar;
     text-align: center;
-    opacity: 0.9;
 }
 
 .wrapper {
@@ -73,7 +72,6 @@ body {
     font-size: 40px;
     line-height: 200px;
     vertical-align: middle;
-    opacity: 1;
 }
 
 .name:hover {
@@ -89,7 +87,7 @@ body {
 }
 
 #name3 {
-    color: #000134;
+    color: #bcbdeb;
 }
 
 #name4 {
@@ -100,10 +98,4 @@ body {
 .a {
     width: 90%;
     text-decoration: none;
-}
-
-.fas {
-    font-size: 50px;
-    color: rgb(17, 0, 52);
-    margin-left: 1000px;
 }

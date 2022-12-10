@@ -2,38 +2,123 @@ body {
     background-color: rgb(180 180 229);
 
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo img {
+    height: 100px;
+    border-radius: 30px;
+}
+
+header {
+    display: flex;
+    gap: 150px;
+    margin: 30px;
+}
+
+header * {
+    margin: 0;
+    padding: 0;
+}
+
 .space_title {
-    font-size: 75px;
+    font-size: 71px;
     color: rgb(0 0 164);
     font-family: Amar;
     src: url('fonts/Amar.ttf');
     text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
 }
 
-.a{
+.a {
     text-decoration: none;
 }
-.name-div{
+
+.a:hover {
+    color: rgb(44, 0, 114);
+}
+
+.name-div {
     display: flex;
     gap: 50px;
     align-items: center;
     justify-content: center;
+    background-color: rgb(164, 146, 255);
+    margin-bottom: 20px;
 }
-.cards-div{
+
+.cards-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 90px;
 }
-.card{
-    width: 90%;
-    height: 500px;
+
+.card {
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
     background-color: blueviolet;
 }
+
+.card-name {
+    font-size: 25px;
+    text-align: center;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    margin: 10px;
+}
+
+.img1 {
+    height: 300px;
+    border-radius: 12px;
+}
+
+.img2 {
+    width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.img2-2 {
+    width: 250px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.div1 {
+    width: 100%;
+}
+
+.div2 {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.div1-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.div2-img {
+    display: flex;
+    flex-direction: column;
+}
+
 .arrow-up {
     position: fixed;
-    bottom: 5%;
+    bottom: 3%;
     right: 0.5%;
     color: #fff;
     width: 65px;
@@ -49,6 +134,7 @@ body {
     border-radius: 5px;
     transition: .5s;
 }
+
 .arrow-up:hover {
     background-position: 100% 0;
     box-shadow: 0px 10px 15px 5px rgb(0 0 0 / 50%);

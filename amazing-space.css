@@ -1,10 +1,35 @@
 body {
-    background-color: rgb(13, 13, 104);
+    background-color: rgb(187 187 215);
 
 }
+
+
+.space_title {
+    font-size: 70px;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.logo img {
+    height: 100px;
+    border-radius: 30px;
+}
+
+header {
+    display: flex;
+    gap: 150px;
+    margin: 30px;
+}
+
+header * {
+    margin: 0;
+    padding: 0;
+}
+
 .space_title {
     font-size: 75px;
-    color: rgb(99 99 255);
+    color: rgb(0, 0, 98);
     font-family: Amar;
     src: url('fonts/Amar.ttf');
     text-align: center;
