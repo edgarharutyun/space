@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 body {
     background-color: rgb(180 180 229);
 
@@ -15,6 +18,12 @@ html {
 .logo img {
     height: 100px;
     border-radius: 30px;
+    transition-duration: 0.4s;
+}
+
+.logo img:hover {
+
+    box-shadow: 0px 5px 10px 5px rgba(0, 24, 161, 0.2);
 }
 
 header {
@@ -62,7 +71,7 @@ header {
     width: 95%;
     height: auto;
     border-radius: 10px;
-    background-color: blueviolet;
+    background-color: #a492ff;
 }
 
 .card-name {
@@ -75,6 +84,7 @@ header {
     font-weight: 300;
     text-align: left;
     margin: 10px;
+    font-family: sans-serif;
 }
 
 .img1 {
@@ -103,7 +113,8 @@ header {
     justify-content: flex-end;
     display: flex;
 }
-.img-text-div{
+
+.img-text-div {
     display: flex;
 }
 

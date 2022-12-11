@@ -8,18 +8,26 @@
     font-size: 70px;
     text-align: center;
     line-height: 100px;
-    vertical-align:middle;
+    vertical-align: middle;
 }
+
 .logo img {
     height: 100px;
-    border-radius: 30px;
+    border-radius: 35px;
+    transition-duration: 0.4s;
 }
+
+.logo img:hover {
+    opacity: 0.5;
+}
+
 header {
     display: flex;
     gap: 150px;
     margin: 30px;
 }
-header * {    
+
+header * {
     margin: 0;
     padding: 0;
 }
@@ -460,9 +468,11 @@ ul.solarsystem:hover li {
 html {
     scroll-behavior: smooth;
 }
+
 .planet-img {
     width: 245px;
 }
+
 .planet-img {
     border-radius: 10px;
 }
@@ -484,13 +494,14 @@ html {
     overflow: hidden;
 
 }
+
 .button-div {
     margin-top: 600px;
     align-items: flex-end;
     display: flex;
     justify-content: flex-end;
- 
-    
+
+
 }
 
 .button-see-more span {
@@ -585,38 +596,48 @@ html {
     .solarsystem {
         display: none;
     }
+
     #descriptions {
         display: none;
     }
+
     .info {
-       width: 100%;
+        width: 100%;
     }
+
     div.planet-img div:not(:first-child) {
         display: none;
     }
+
     .wrapper {
         display: block;
     }
+
     .planet-img {
         width: 100%;
         display: block;
     }
+
     .info-text {
         display: block;
     }
+
     .button-see-more {
         display: block;
         margin-top: 0;
         position: relative;
     }
+
     .button-div {
         align-items: initial;
         display: flex;
         justify-content: center;
     }
+
     .button-div * {
         all: initial;
     }
+
     .button-see-more {
         position: absolute;
         display: flex;
@@ -630,7 +651,7 @@ html {
         text-decoration: none;
         overflow: hidden;
     }
-        
+
     .button-see-more span {
         text-transform: uppercase;
         font-family: monospace;
@@ -650,11 +671,11 @@ html {
         left: 0;
         transition: .4s;
     }
-    
+
     .button-see-more:hover::before {
         width: 100%;
-    }  
-    
+    }
+
     .planets-info-text {
         overflow: hidden;
         text-overflow: ellipsis;
