@@ -72,10 +72,13 @@ body {
     font-size: 40px;
     line-height: 200px;
     vertical-align: middle;
+    opacity: 10;
 }
 
 .name:hover {
     color: rgb(72, 0, 255);
+    text-shadow: 3px 3px #ff0000;
+
 }
 
 #name1 {

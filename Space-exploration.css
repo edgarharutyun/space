@@ -42,20 +42,44 @@ header {
     vertical-align: middle;
 }
 
-.a {
+.name-a{
     text-decoration: none;
-}
+    color: #871800;
+    transition-duration: 0.25s;
 
-.a:hover {
-    color: rgb(44, 0, 114);
 }
+.name-a:hover{
+    text-shadow: 0.7px 0.7px #871800;
+}
+.a {
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2.5px;
+    left: 0;
+    background-color: rgb(46, 0, 56);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  } 
+
 
 .name-div {
     display: flex;
     gap: 50px;
     align-items: center;
     justify-content: center;
-    background-color: rgb(164, 146, 255);
+    background-color: rgb(151 106 255);
     margin-bottom: 20px;
 }
 
@@ -139,7 +163,15 @@ header {
     flex-direction: column;
     align-items: flex-end;
 }
-
+.milky-way-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.div-nice-img{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 .arrow-up {
     position: fixed;
     bottom: 3%;
