@@ -10,9 +10,10 @@ body {
     src: url('fonts/Amar.ttf');
     font-size: 100px;
     font-weight: bold;
-    color: rgb(0, 21, 50);
+    color: rgb(3 57 131);
     font-family: Amar;
     text-align: center;
+    text-shadow: 3px 3px #000000;
 }
 
 .wrapper {
@@ -74,27 +75,24 @@ body {
     vertical-align: middle;
     opacity: 10;
 }
-
-.name:hover {
-    color: rgb(72, 0, 255);
-    text-shadow: 3px 3px #ff0000;
-
-}
-
 #name1 {
-    color: rgb(6 0 178);
+    color: rgb(49, 42, 255);
+    text-shadow: 3px 3px #040025;
 }
 
 #name2 {
     color: #fff1e7;
+    text-shadow: 3px 3px #482000;
 }
 
 #name3 {
-    color: #bcbdeb;
+    color: #c7c8f3;
+    text-shadow: 3px 3px #000a2c;
 }
 
 #name4 {
-    color: #110014;
+    color: #9e00be;
+    text-shadow: 3px 3px #000000;
 }
 
 
