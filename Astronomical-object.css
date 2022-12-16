@@ -81,7 +81,13 @@ header {
     margin: 10px;
     font-family: sans-serif;
 }
-
+.second-text{
+    text-align: center;
+    color: rgb(80, 80, 80);
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
 .arrow-up {
     position: fixed;
     bottom: 5%;
@@ -104,4 +110,13 @@ header {
     background-position: 100% 0;
     box-shadow: 0px 10px 15px 5px rgb(0 0 0 / 50%);
 
+}
+
+@media (max-width: 500px) {
+    .row {
+        flex-direction: column;
+    }    
+    .space_title {
+        font-size: 40px;
+    }
 }

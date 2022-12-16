@@ -75,6 +75,7 @@ body {
     vertical-align: middle;
     opacity: 10;
 }
+
 #name1 {
     color: rgb(49, 42, 255);
     text-shadow: 3px 3px #040025;
@@ -95,8 +96,23 @@ body {
     text-shadow: 3px 3px #000000;
 }
 
-
 .a {
     width: 90%;
     text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    .name {
+        font-size: 30px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .space_title {
+        font-size: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 }

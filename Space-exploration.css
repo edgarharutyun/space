@@ -1,6 +1,7 @@
-*{
+* {
     font-family: sans-serif;
 }
+
 body {
     background-color: rgb(180 180 229);
 
@@ -28,7 +29,7 @@ html {
 
 header {
     display: flex;
-    gap: 150px;
+    gap: 12.5%;
     margin: 30px;
 }
 
@@ -42,25 +43,30 @@ header {
     vertical-align: middle;
 }
 
-.title{
+.title {
     color: rgb(43, 0, 52);
+    text-align: center;
 }
 
-.name-a{
+
+.name-a {
     text-decoration: none;
     color: #871800;
     transition-duration: 0.25s;
 
 }
-.name-a:hover{
+
+.name-a:hover {
     text-shadow: 0.7px 0.7px #871800;
 }
+
 .a {
     position: relative;
     text-decoration: none;
-  }
-  
-  .a:after {
+    width: 25%;
+}
+
+.a:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -70,12 +76,12 @@ header {
     background-color: rgb(91 42 102);
     transform-origin: bottom right;
     transition: transform 0.4s ease-out;
-  }
-  
-  .a:hover::after {
+}
+
+.a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  } 
+}
 
 
 .name-div {
@@ -116,66 +122,68 @@ header {
 }
 
 .img1 {
-    height: 300px;
+    width: 100%;
     border-radius: 12px;
 }
 
 .img2 {
-    width: 200px;
-    margin: 10px;
+    width: 100%;
     border-radius: 5px;
 }
 
 .img2-2 {
-    width: 250px;
-    margin: 10px;
+    width: 100%;
     border-radius: 5px;
 }
 
-.div1 {
-    width: auto;
+.col-25 {
+    width: 23.5%;
 }
 
-.div2 {
-    justify-content: flex-end;
-    display: flex;
+.col-75 {
+    width: 73.5%;
 }
 
 .img-text-div {
     display: flex;
+    gap: 3%;
+    margin: 0 10px;
 }
 
 .div1-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 10%;
+    padding: 0 25px;
 }
+
 .div2-img {
     display: flex;
     flex-direction: column;
 }
 
-.div3-img{
-    width: 270px;
-    margin: 10px;
+.div3-img {
+    width: 100%;
     border-radius: 5px;
 }
 
-.div3-images{
+.div3-images {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
 }
-.milky-way-img{
+
+.milky-way-img {
     width: 100%;
     border-radius: 10px;
 }
-.div-nice-img{
+
+.div-nice-img {
     align-items: center;
     justify-content: center;
     display: flex;
 }
+
 .arrow-up {
     position: fixed;
     bottom: 3%;
@@ -199,4 +207,27 @@ header {
     background-position: 100% 0;
     box-shadow: 0px 10px 15px 5px rgb(0 0 0 / 50%);
 
+}
+
+@media (max-width: 900px) {
+    .space_title {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .text,
+    .name-a,
+    .title,
+    .card-name,
+    .space_title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .space_title {
+        font-size: 40px;
+    }
 }
