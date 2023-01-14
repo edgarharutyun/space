@@ -10,7 +10,8 @@ body {
     src: url('fonts/Amar.ttf');
     font-size: 100px;
     font-weight: bold;
-    color: rgb(3 57 131);
+    color: rgb(0 74 178);
+
     font-family: Amar;
     text-align: center;
     text-shadow: 3px 3px #000000;
@@ -92,7 +93,7 @@ body {
 }
 
 #name4 {
-    color: #9e00be;
+        color: #c36dd4;
     text-shadow: 3px 3px #000000;
 }
 
@@ -103,14 +104,14 @@ body {
 
 @media (max-width: 650px) {
     .name {
-        font-size: 30px;
+        font-size: 25px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
 
     .space_title {
-        font-size: 40px;
+        font-size: 60px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;

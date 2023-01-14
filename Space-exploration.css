@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(180 180 229);
+    background-color: rgb(220, 210, 241);
 
 }
 
@@ -23,8 +23,8 @@ html {
 }
 
 .logo img:hover {
-
-    box-shadow: 0px 5px 10px 5px rgba(0, 24, 161, 0.2);
+    box-shadow: 2px 2px 2px 2px rgba(47, 46, 46, 0.2);
+    opacity: 0.8;
 }
 
 header {
@@ -48,22 +48,19 @@ header {
     text-align: center;
 }
 
-
-.name-a {
-    text-decoration: none;
-    color: #871800;
-    transition-duration: 0.25s;
-
-}
-
-.name-a:hover {
-    text-shadow: 0.7px 0.7px #871800;
+.name-div {
+    display: flex;
+    gap: 4%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(151 106 255);
+    margin-bottom: 20px;
 }
 
 .a {
     position: relative;
     text-decoration: none;
-    width: 25%;
+    width: auto;
 }
 
 .a:after {
@@ -71,9 +68,9 @@ header {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2.5px;
+    height: 2.7px;
     left: 0;
-    background-color: rgb(91 42 102);
+    background-color: rgb(79, 20, 92);
     transform-origin: bottom right;
     transition: transform 0.4s ease-out;
 }
@@ -81,16 +78,6 @@ header {
 .a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-
-.name-div {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(151 106 255);
-    margin-bottom: 20px;
 }
 
 .cards-div {
@@ -121,17 +108,31 @@ header {
     font-family: sans-serif;
 }
 
-.img1 {
-    width: 100%;
-    border-radius: 12px;
+.name-a {
+    text-decoration: none;
+    color: #871800;
+    transition-duration: 0.25s;
+
 }
 
-.img2 {
+.name-a:hover {
+    text-shadow: 0.7px 0.7px #871800;
+}
+
+.div1-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding: 0 25px;
+}
+
+.img1 {
     width: 100%;
     border-radius: 5px;
 }
 
-.img2-2 {
+.img {
     width: 100%;
     border-radius: 5px;
 }
@@ -144,6 +145,14 @@ header {
     width: 73.5%;
 }
 
+.col-20 {
+    width: 17%;
+}
+
+.col-80 {
+    width: 83%;
+}
+
 .img-text-div {
     display: flex;
     gap: 3%;
@@ -154,18 +163,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10%;
+    gap: 5%;
     padding: 0 25px;
 }
 
 .div2-img {
     display: flex;
     flex-direction: column;
-}
-
-.div3-img {
-    width: 100%;
-    border-radius: 5px;
 }
 
 .div3-images {
@@ -229,5 +233,37 @@ header {
 
     .space_title {
         font-size: 40px;
+    }
+
+    .a {
+        width: 20%;
+    }
+    .cards-div {
+        gap: 25px;
+}
+}
+
+@media (max-width: 760px) {
+    .space_title {
+        font-size: 45px;
+    }
+
+    header {
+        gap: 5%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
+@media (max-width: 720px) {
+    .space_title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 610px) {
+    .title {
+        font-size: 15px;
     }
 }

@@ -18,12 +18,12 @@
 }
 
 .logo img:hover {
-    opacity: 0.5;
+    opacity: 0.75;
 }
 
 header {
     display: flex;
-    gap: 150px;
+    gap: 10%;
     margin: 30px;
 }
 
@@ -441,6 +441,9 @@ ul.solarsystem:hover li {
     font-family: Amar;
 }
 
+.a{
+    text-decoration: none;
+}
 .info {
     width: 93%;
     height: auto;
@@ -500,10 +503,10 @@ html {
     align-items: flex-end;
     display: flex;
     justify-content: flex-end;
-
-
 }
-
+#button-div-venius{
+    margin-top: 650px;
+}
 .button-see-more span {
     text-transform: uppercase;
     font-family: monospace;
@@ -566,30 +569,6 @@ html {
     background-position: 100% 0;
     box-shadow: 0px 10px 15px 5px rgb(0 0 0 / 50%);
 
-}
-
-
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    text-indent: 0;
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 200;
-    top: -10px;
-    right: -101px;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
 }
 
 @media (max-width: 500px) {
@@ -680,5 +659,11 @@ html {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+    }
+    .space_title {
+        font-size: 40px;
+    }
+    .logo img {
+        height: 80px;
     }
 }
